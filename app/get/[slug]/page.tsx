@@ -359,7 +359,17 @@ export default function SkillDownloadPage() {
                 }}
               />
               <span>
-                קראתי את מדיניות הפרטיות ומסכים/ה.{" "}
+                קראתי את{" "}
+                <a
+                  href="/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "var(--blue)", textDecoration: "underline" }}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  מדיניות הפרטיות
+                </a>
+                {" "}ומסכים/ה.{" "}
                 <span style={{ opacity: 0.7 }}>
                   אנחנו שומרים את הפרטים שלך בצינעה ולא משתפים אותם עם צד שלישי.
                 </span>
