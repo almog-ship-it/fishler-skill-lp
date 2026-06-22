@@ -1,7 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  // Allow downloading from common file hosts
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   async headers() {
     return [
       {
