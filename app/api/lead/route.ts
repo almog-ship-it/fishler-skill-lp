@@ -58,9 +58,9 @@ export async function POST(req: NextRequest) {
         },
         body: JSON.stringify({
           fields: {
-            Name: name.trim(),
-            Email: email.trim(),
-            Source: `skill-download-${slug}`,
+            "Full Name": name.trim(),
+            "Email Address": email.trim(),
+            "Lead Source": `skill-download-${slug}`,
           },
         }),
       }
